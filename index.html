@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>API Project</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome to API Project</h1>
+  <button class="toggle-theme" onclick="toggleTheme()">Toggle Theme</button>
+  <div class="container">
+    <h2>Weather App</h2>
+    <input type="text" id="locationInput" placeholder="Enter location">
+    <button onclick="getWeather()">Search</button>
+    <button onclick="toggleUnit()">Switch °C/°F</button>
+    <div class="recent-searches" id="recent"></div>
+    <div class="weather" id="weather"></div>
+    <div class="forecast" id="forecast"></div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
